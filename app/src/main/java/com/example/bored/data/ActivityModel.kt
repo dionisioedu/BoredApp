@@ -9,5 +9,5 @@ data class ActivityModel(
     val price: Double,
     val link: String,
     val key: String,
-    val acessibility: Int,
+    val accessibility: Double
 )
