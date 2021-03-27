@@ -1,58 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/textview_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
-        android:layout_marginBottom="51dp"
-        android:text="BORED"
-        android:textSize="42dp"
-        app:layout_constraintBottom_toTopOf="@+id/iamgeview_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-    <ImageView
-        android:id="@+id/iamgeview_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginBottom="61dp"
-        android:src="@drawable/ic_baseline_pool_96"
-        app:layout_constraintBottom_toTopOf="@+id/textview_activity"
-        app:layout_constraintStart_toStartOf="@+id/textview_title"
-        app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+    </data>
 
-    <TextView
-        android:id="@+id/textview_activity"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginBottom="81dp"
-        android:layout_margin="8dp"
-        android:padding="4dp"
-        android:text="Do you want some suggestion?"
-        app:layout_constraintBottom_toTopOf="@+id/button_bored"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iamgeview_icon" />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_bored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="126dp"
-        android:text="What should I do?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_activity" />
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            android:layout_marginBottom="51dp"
+            android:text="BORED"
+            android:textSize="42dp"
+            app:layout_constraintBottom_toTopOf="@+id/iamgeview_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iamgeview_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="61dp"
+            android:src="@drawable/ic_baseline_pool_96"
+            app:layout_constraintBottom_toTopOf="@+id/textview_activity"
+            app:layout_constraintStart_toStartOf="@+id/textview_title"
+            app:layout_constraintTop_toBottomOf="@+id/textview_title" />
+
+        <TextView
+            android:id="@+id/textview_activity"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="10dp"
+            android:text="Do you want some suggestion?"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_bored"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iamgeview_icon" />
+
+        <Button
+            android:id="@+id/button_bored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="126dp"
+            android:text="What should I do?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_activity" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

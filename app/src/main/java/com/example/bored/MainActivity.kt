@@ -21,15 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             viewModel.activity.observe(this@MainActivity, Observer {
                 textviewActivity.text = it
-                Log.d("Teste", "Texto atualizado : $it")
             })
 
-            viewModel.activity.value = "Nothing to do?"
-
-            buttonBored?.let {
+            buttonBored.let {
                 it.setOnClickListener {
-                    viewModel.activity.value = "Clicked!"
-                    Log.d("Teste", "Button Clicked!")
+                    viewModel.getNext()
                 }
             }
         }
